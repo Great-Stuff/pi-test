@@ -1,12 +1,19 @@
 body{
     font-family: "Source Code Pro", monospace;
     font-size: 12pt;
+    overflow-x: hidden;
+    scrollbar-width: 0px;
+}
+html::-webkit-scrollbar {
+    width: none;
 }
 .pi-out{
-    inline-size: calc(100vw - 15px);
+    inline-size: 100vw;
     overflow-wrap: break-word;
-    padding-right: 5px;
     letter-spacing: 10px;
+}
+.cool-links{
+    text-align: center;
 }
 .header, .subheader{
     text-align: center;
@@ -15,4 +22,16 @@ body{
 button{
     font-size: larger;
     font-family: "Source Code Pro", monospace;
+}
+
+@media screen and (max-width: 800px){
+    .link-divider{
+        display: none;
+    }
+    .cool-links{
+        display: grid;
+    }
+    a{
+        padding: 5px;
+    }
 }

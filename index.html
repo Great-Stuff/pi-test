@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Source+Code+Pro">
-    <title>PI Test</title>
+    <title>Pi Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="header">PI Test</h1>
-    <h4 class="subheader">Learn PI (Up to 1,000 digits)</h4>
-    <a href="https://www.youtube.com/watch?v=3HRkKznJoZA" target="_blank">The Pi Song (Memorize 100 Digits Of π) | SCIENCE SONGS</a>
+    <h1 class="header">Pi Test</h1>
+    <h4 class="subheader">Learn pi up to 1,000 digits</h4>
+    <div class="cool-links">
+        <a href="http://www.math.com/tables/constants/pi.htm">About Pi</a>
+        <span class="link-divider">|</span>
+        <a href="https://www.youtube.com/watch?v=3HRkKznJoZA" target="_blank">The Pi Song</a>
+        <span class="link-divider">|</span>
+        <a href="https://stuff.mit.edu/afs/sipb/contrib/pi/pi-billion.txt">1 Billion Digits of Pi</a>
+        <span class="link-divider">|</span>
+        <a href="https://www.guinnessworldrecords.com/news/2022/3/new-value-of-pi-calculated-by-swiss-university-at-over-62-billion-digits-694748">Pi World Record</a>
+    </div>
     <dialog class="retry">
         <h2>You got <span class="digits-correct"></span>/1,000 digits of Pi</h2>
         <button onclick="window.location.reload()">Retry</button>
@@ -21,7 +29,9 @@
         <br>
         <input type="text" size="10" class="main-input" oninput="checkGame(this)">
         <p class="mistake-wrapper">Mistakes Left: <span class="mistake-show">5</span></p>
-        <p class="pi-out">3.</p>
+        <div class="center-out">
+            <p class="pi-out">3.</p>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>
