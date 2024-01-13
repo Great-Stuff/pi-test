@@ -1,0 +1,18 @@
+body{
+    font-family: "Source Code Pro", monospace;
+    font-size: 12pt;
+}
+.pi-out{
+    inline-size: calc(100vw - 15px);
+    overflow-wrap: break-word;
+    padding-right: 5px;
+    letter-spacing: 10px;
+}
+.header, .subheader{
+    text-align: center;
+    margin: 0;
+}
+button{
+    font-size: larger;
+    font-family: "Source Code Pro", monospace;
+}
