@@ -1,0 +1,8 @@
+index.js
+Cache-Control: no-cache, no-store, must-revalidate
+
+style.css
+Cache-Control: no-cache, no-store, must-revalidate
+
+dark.css
+Cache-Control: no-cache, no-store, must-revalidate
