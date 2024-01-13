@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Source+Code+Pro">
     <title>Pi Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link class="style" rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="header">Pi Test</h1>
     <h4 class="subheader">Learn pi up to 1,000 digits</h4>
+    <button class="theme-toggle" onclick="changeTheme()"><img class="theme-toggle-img" src="https://static-00.iconduck.com/assets.00/dark-theme-icon-512x512-185rlszm.png" alt=""></button>
     <div class="cool-links">
-        <a href="http://www.math.com/tables/constants/pi.htm">About Pi</a>
+        <a href="http://www.math.com/tables/constants/pi.htm" target="_blank">About Pi</a>
         <span class="link-divider">|</span>
         <a href="https://www.youtube.com/watch?v=3HRkKznJoZA" target="_blank">The Pi Song</a>
         <span class="link-divider">|</span>
-        <a href="https://stuff.mit.edu/afs/sipb/contrib/pi/pi-billion.txt">1 Billion Digits of Pi</a>
+        <a href="https://stuff.mit.edu/afs/sipb/contrib/pi/pi-billion.txt" target="_blank">1 Billion Digits of Pi</a>
         <span class="link-divider">|</span>
-        <a href="https://www.guinnessworldrecords.com/news/2022/3/new-value-of-pi-calculated-by-swiss-university-at-over-62-billion-digits-694748">Pi World Record</a>
+        <a href="https://www.guinnessworldrecords.com/news/2022/3/new-value-of-pi-calculated-by-swiss-university-at-over-62-billion-digits-694748" target="_blank">Pi World Record</a>
     </div>
     <dialog class="retry">
         <h2>You got <span class="digits-correct"></span>/1,000 digits of Pi</h2>

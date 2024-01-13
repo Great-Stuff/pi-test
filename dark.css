@@ -3,10 +3,21 @@ body{
     font-size: 12pt;
     overflow-x: hidden;
     scrollbar-width: 0px;
+    background-color: #1c1b22;
+    color: rgb(219, 219, 219);
     padding-bottom: 15px;
 }
 html::-webkit-scrollbar {
     width: none;
+}
+a{
+    color: #385e85;
+}
+a:active{
+    color: purple;
+}
+a:visited{
+    color: rgb(179, 19, 179);
 }
 .pi-out{
     inline-size: 100vw;
@@ -20,6 +31,11 @@ html::-webkit-scrollbar {
     text-align: center;
     margin: 0;
 }
+input{
+    background-color: #1c1b22;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+}
 button{
     font-size: larger;
     font-family: "Source Code Pro", monospace;
@@ -29,6 +45,8 @@ button{
     top: 5px;
     right: 5px;
     font-size: 12pt;
+    width: min-content;
+    height: min-content;
 }
 .theme-toggle-img{
     width: 30px;

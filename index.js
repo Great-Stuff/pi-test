@@ -3,9 +3,12 @@ const pi_out = document.querySelector(".pi-out")
 const mistake_show = document.querySelector(".mistake-show")
 const digits_correct = document.querySelector(".digits-correct")
 const retry = document.querySelector(".retry")
+const style = document.querySelector(".style")
 let correct_digits = ""
 let index_counter = 0
 let mistake_counter = 5
+let theme = 0
+setTheme()
 
 function retryModel(){
     retry.showModal()
@@ -33,4 +36,27 @@ function checkGame(obj){
         retryModel()
     }
     obj.value = ""
+}
+
+function changeTheme(){
+    if(theme == 0){
+        style.setAttribute("href", "dark.css")
+        theme = 1
+        localStorage.setItem("theme", theme)
+    }
+    else if(theme == 1){
+        style.setAttribute("href", "style.css")
+        theme = 0
+        localStorage.setItem("theme", theme)
+    }
+}
+
+function setTheme(){
+    theme = localStorage.getItem("theme")
+    if(theme == 0){
+        style.setAttribute("href", "style.css")
+    }
+    else if(theme == 1){
+        style.setAttribute("href", "dark.css")
+    }
 }
