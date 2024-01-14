@@ -19,10 +19,15 @@ a:active{
 a:visited{
     color: rgb(179, 19, 179);
 }
+.center-out{
+    display: flex;
+    place-content: center;
+}
 .pi-out{
     inline-size: 100vw;
     overflow-wrap: break-word;
     letter-spacing: 10px;
+    width: 80%;
 }
 .cool-links{
     text-align: center;

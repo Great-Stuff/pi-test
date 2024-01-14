@@ -15,7 +15,7 @@ function retryModel(){
     digits_correct.textContent = index_counter++
 }
 
-function checkGame(obj){
+function mainLogic(obj){
     let val = String(obj.value)
     if(mistake_counter != 0){
         if(val == PI[index_counter]){
@@ -52,6 +52,9 @@ function changeTheme(){
 }
 
 function setTheme(){
+    if(localStorage.getItem("theme") != 0 && localStorage.getItem("theme") != 1){
+        return
+    }
     theme = localStorage.getItem("theme")
     if(theme == 0){
         style.setAttribute("href", "style.css")
