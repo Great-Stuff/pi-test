@@ -9,7 +9,7 @@ let correct_digits = ""
 let index_counter = 0
 let mistake_counter = 5
 let theme = 0
-
+let css_version = "?"+3.2
 setTheme()
 
 function retryModel(){
@@ -40,12 +40,12 @@ function mainLogic(obj){
 
 function changeTheme(){
     if(theme == 0){
-        style.setAttribute("href", "dark.css")
+        style.setAttribute("href", `dark.css${css_version}`)
         theme = 1
         localStorage.setItem("theme", theme)
     }
     else if(theme == 1){
-        style.setAttribute("href", "style.css")
+        style.setAttribute("href", `style.css${css_version}`)
         theme = 0
         localStorage.setItem("theme", theme)
     }
@@ -57,9 +57,9 @@ function setTheme(){
     }
     theme = localStorage.getItem("theme")
     if(theme == 0){
-        style.setAttribute("href", "style.css")
+        style.setAttribute("href", `style.css${css_version}`)
     }
     else if(theme == 1){
-        style.setAttribute("href", "dark.css")
+        style.setAttribute("href", `dark.css${css_version}`)
     }
 }
