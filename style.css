@@ -3,7 +3,6 @@ body{
     font-size: 12pt;
     overflow-x: hidden;
     scrollbar-width: 0px;
-    padding-bottom: 15px;
 }
 html::-webkit-scrollbar {
     width: none;

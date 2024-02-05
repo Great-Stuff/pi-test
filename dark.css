@@ -5,7 +5,6 @@ body{
     scrollbar-width: 0px;
     background-color: #1c1b22;
     color: rgb(219, 219, 219);
-    padding-bottom: 15px;
 }
 html::-webkit-scrollbar {
     width: none;
@@ -18,6 +17,13 @@ a:active{
 }
 a:visited{
     color: rgb(179, 19, 179);
+}
+dialog{
+    background-color: #1c1b22;
+    color: rgb(219, 219, 219);
+}
+dialog::backdrop{
+    background-color: rgba(219, 219, 219, 0.1);
 }
 .center-out{
     display: flex;

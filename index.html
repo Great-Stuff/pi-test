@@ -21,15 +21,15 @@
         <a href="https://www.guinnessworldrecords.com/news/2022/3/new-value-of-pi-calculated-by-swiss-university-at-over-62-billion-digits-694748" target="_blank">Pi World Record</a>
     </div>
     <dialog class="retry">
-        <h2>You got <span class="digits-correct"></span>/1,000 digits of Pi</h2>
+        <h2>You got <span class="digits-correct"></span> digit(s) of Pi</h2>
         <button onclick="window.location.reload()">Retry</button>
         <button onclick="retry.close()">Close</button>
     </dialog>
-
+    <br>
     <div class="main-content">
-        <br>
-        <input type="text" size="10" class="main-input" oninput="mainLogic(this)">
-        <p class="mistake-wrapper">Mistakes Left: <span class="mistake-show">5</span></p>
+            <input type="text" size="10" class="main-input" oninput="mainLogic(this); changeHighScore(this)">
+            <p class="current-index-wrapper float-left">Current Digit: <span class="current-index-show">0</span></p>
+            <p class="mistake-wrapper float-left">Mistakes Left: <span class="mistake-show">5</span></p>
         <div class="center-out">
             <p class="pi-out">3.</p>
         </div>
