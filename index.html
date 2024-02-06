@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Source+Code+Pro">
     <title>Pi Test</title>
-    <link class="style" rel="stylesheet" href="style.css?v=3.2">
+    <link class="style" rel="stylesheet" href="style.css?v=3.3">
 </head>
 <body>
     <h1 class="header">Pi Test</h1>
@@ -22,12 +22,13 @@
     </div>
     <dialog class="retry">
         <h2>You got <span class="digits-correct"></span> digit(s) of Pi</h2>
-        <button onclick="window.location.reload()">Retry</button>
-        <button onclick="retry.close()">Close</button>
+        <button onclick="location.reload()">Retry</button>
+        <button onclick="retry.close(); retry_btn.style.display = 'inline'">Close</button>
     </dialog>
     <br>
     <div class="main-content">
             <input type="text" size="10" class="main-input" oninput="mainLogic(this); changeHighScore(this)">
+            <button class="retry-btn" onclick="location.reload()">Retry</button>
             <p class="current-index-wrapper float-left">Current Digit: <span class="current-index-show">0</span></p>
             <p class="mistake-wrapper float-left">Mistakes Left: <span class="mistake-show">5</span></p>
         <div class="center-out">

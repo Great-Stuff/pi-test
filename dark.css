@@ -62,6 +62,10 @@ button{
 .theme-toggle-img{
     width: 30px;
 }
+.retry-btn{
+    display: none;
+    font-size: 10pt;
+}
 @media screen and (max-width: 800px){
     .link-divider{
         display: none;

@@ -5,11 +5,12 @@ const current_index_show = document.querySelector(".current-index-show")
 const digits_correct = document.querySelector(".digits-correct")
 const retry = document.querySelector(".retry")
 const style = document.querySelector(".style")
+const retry_btn = document.querySelector(".retry-btn")
 let correct_digits = ""
 let index_counter = 0
 let mistake_counter = 5
 let theme = 0
-let css_version = "?"+3.2
+let css_version = "?"+3.3
 setTheme()
 
 function retryModel(){
